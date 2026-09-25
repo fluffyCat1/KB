@@ -1,0 +1,20 @@
+name: KBBlade
+version: '${project.version}'
+main: com.kb.blade.KBPlugin
+api-version: '1.21'
+author: Claude
+description: Клинок с прокачкой урона за убийства и активной способностью на ПКМ
+
+commands:
+  kb:
+    description: Выдаёт клинок KBBlade с указанным ID
+    usage: /kb <id> [игрок]
+    permission: kbblade.give
+
+permissions:
+  kbblade.give:
+    description: Позволяет выдавать клинок KBBlade
+    default: op
+  kbblade.use:
+    description: Позволяет использовать способность клинка (выдаётся всем по умолчанию)
+    default: true
